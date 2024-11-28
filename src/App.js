@@ -1,12 +1,12 @@
 import { createContext, useReducer } from "react";
 import './App.css';
 import TodoList from "./components/TodoList";
-import { initialState, todoReducer } from "./context/todoReducer";
+import {todoReducer} from "./context/todoReducer";
 
 export const TodoContext = createContext();
 
 function App() {
-  const [state, dispatch] = useReducer(todoReducer, initialState);
+  const [state, dispatch] = useReducer(todoReducer, []);
 
   return (
     <div className="App">
