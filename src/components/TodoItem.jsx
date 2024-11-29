@@ -2,6 +2,7 @@ import "./TodoItem.css"
 import {useContext} from "react";
 import {TodoContext} from "../App";
 import {FIN_TODO, REMOVE_TODO} from "../context/toAction";
+import {deleteTodo} from "../api/todo";
 
 const TodoItem = ({todo}) => {
 
@@ -11,8 +12,10 @@ const TodoItem = ({todo}) => {
         dispatch({type: FIN_TODO, payload: todo.id});
     }
 
-    const handleRemove = () => {
-        dispatch({type: REMOVE_TODO, payload: todo.id});
+    const handleRemove = async () => {
+        deleteTodo(todo.id).then(() => {
+         dispatch({type: REMOVE_TODO, payload: todo.id});
+        })
     }
 
     return (
