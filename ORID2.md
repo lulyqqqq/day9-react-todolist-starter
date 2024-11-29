@@ -1,0 +1,18 @@
+O：
+今天的学习目标是掌握React Router的使用,理解如何进行路由定向
+学习使用Provider包裹进行上下文管理,熟悉Axios发送HTTP请求的方式
+同时了解并尝试使用Ant Design（antd）组件库,以提升UI开发效率
+
+R：
+nested
+
+I：
+通过学习React Router,我深刻理解了如何在React中实现页面跳转和路由控制,尤其是在单页应用（SPA）中, 通过useHistory和useLocation来管理导航
+Provider的使用让我了解了上下文（Context）如何在组件树中传递数据,避免了层层传递props的麻烦
+Axios作为HTTP客户端,简化了请求的发送与响应的处理,让前后端交互更加高效
+而Ant Design的组件库则让我认识到如何快速搭建现代化UI界面,并且通过其丰富的组件和主题定制提升了开发效率
+D：
+深入学习React Router的高级功能,如嵌套路由和路由守卫,掌握更复杂的路由管理技巧
+在项目中实践使用Provider包裹进行全局状态管理,并逐步过渡到Context API进行组件间的状态传递
+熟练掌握Axios的使用,处理不同类型的请求和响应,探索请求拦截器和响应拦截器的高级功能
+在UI设计中多使用Ant Design组件库,尝试自定义主题,提升界面的设计质量,同时探索更复杂的组件使用
