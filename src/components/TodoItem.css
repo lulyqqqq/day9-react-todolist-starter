@@ -8,7 +8,7 @@
 .todo-span {
   width: 450px;
   height: 30px;
-  border: 2px solid black;
+  border: 1px solid black;
   padding-right: 5px;
   margin-right: 10px;
 }
@@ -16,15 +16,14 @@
 .todo-span-done {
   width: 450px;
   height: 30px;
-  border: 2px solid black;
+  border: 1px solid black;
   padding-right: 5px;
   margin-right: 10px;
   text-decoration: line-through;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 1px;
 }
 
 button {
-  background-color: darkred;
   color: white;
   border: none;
   width: 45px;

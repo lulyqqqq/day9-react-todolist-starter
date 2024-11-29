@@ -1,4 +1,4 @@
-import {ADD_TODO, FIN_TODO, INIT, REMOVE_TODO} from "./toAction";
+import {ADD_TODO, FIN_TODO, INIT, REMOVE_TODO, UPDATE_TODO} from "./toAction";
 
 export const todoReducer = (state, action) => {
     switch (action.type) {
@@ -9,6 +9,9 @@ export const todoReducer = (state, action) => {
                 todo.id === action.payload ? {...todo, done: !todo.done} : todo);
         case REMOVE_TODO:
             return state.filter((todo) => todo.id !== action.payload);
+        case UPDATE_TODO:
+            return state.map((todo) =>
+                todo.id === action.payload.id ? {...todo, text: action.payload.text} : todo);
         case INIT:
             return action.payload;
         default:
