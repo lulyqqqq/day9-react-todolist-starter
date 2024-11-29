@@ -20,3 +20,9 @@ export const addTodo = async (todo) =>{
     return response.data;
 }
 
+export const updateTodo = async (id) =>{
+    const response = await instance.post(`/todo${id}`)
+    return response.data;
+}
+
+

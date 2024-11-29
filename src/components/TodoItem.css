@@ -24,5 +24,10 @@
 }
 
 button {
+  background-color: darkred;
+  color: white;
+  border: none;
+  width: 45px;
   height: 34px;
+  margin-left: 5px;
 }
