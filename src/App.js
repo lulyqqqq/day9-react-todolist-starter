@@ -19,18 +19,13 @@ function App() {
         transition: 'background-color 0.3s ease',
     };
 
-    const linkActiveStyle = {
-        color: '#fff',
-        backgroundColor: '#007bff',
-    };
-
     return (
         <div className="App">
             <TodoContext.Provider value={{state, dispatch}}>
                 <BrowserRouter>
                     <nav>
-                        <Link to="/todo-list" style={linkStyle} activeStyle={linkActiveStyle}>Home</Link>
-                        <Link to="/todo-done-list" style={linkStyle} activeStyle={linkActiveStyle}>todoList</Link>
+                        <Link to="/todo-list" style={linkStyle}>Home</Link>
+                        <Link to="/todo-done-list" style={linkStyle}>todoList</Link>
                     </nav>
                     <Routes>
                         <Route path={"/"} element={<Navigate to="/todo-list"/>}></Route>
