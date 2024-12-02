@@ -1,5 +1,6 @@
 import {useContext} from "react";
 import {TodoContext} from "../App";
+import TodoItem from "./TodoItem";
 
 const DoneList = () => {
     const {state} = useContext(TodoContext)
@@ -9,7 +10,7 @@ const DoneList = () => {
         <div>
             {
                 doneList.map((todo) => {
-                    return <div key={todo.id}>{todo.text}</div>
+                    return <TodoItem key={todo.id} todo={todo}/>
                 })
             }
         </div>

@@ -1,8 +1,7 @@
 import axios from "axios";
-import NotFoundPage from "../components/NotFoundPage";
 
 const instance = axios.create({
-    baseURL: "https://67495c0a868020296630a78d.mockapi.io/api/v1/",
+    baseURL: "http://localhost:8080/",
 })
 
 let start = Date.now()

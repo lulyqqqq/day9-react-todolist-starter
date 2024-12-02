@@ -13,7 +13,6 @@ const TodoItem = ({todo}) => {
 
 
     const handleDone = async () => {
-
         await updateTodo(todo.id, {...todo, done: !todo.done}).then(() => {
             dispatch({type: FIN_TODO, payload: todo.id});
         })
@@ -56,7 +55,7 @@ const TodoItem = ({todo}) => {
             </Button>
             <Modal
                 title="Edit Todo"
-                visible={isModalVisible}
+                open={isModalVisible}
                 onCancel={handleCancel}
                 onOk={handleSave}
                 okText="Save"
