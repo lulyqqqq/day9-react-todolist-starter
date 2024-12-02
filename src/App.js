@@ -6,8 +6,10 @@ import TodoList from "./components/TodoList";
 import NotFoundPage from "./components/NotFoundPage";
 import DoneList from "./components/DoneList";
 import HelpPage from "./components/HelpPage";
+import HardStop from "./components/HardStop";
 
 export const TodoContext = createContext();
+
 
 function App() {
     const [state, dispatch] = useReducer(todoReducer, []);
@@ -33,6 +35,7 @@ function App() {
                         <Route path={"/todo-list"} element={<TodoList/>}></Route>
                         <Route path={"/todo-done-list"} element={<DoneList/>}></Route>
                         <Route path={"/todo-help-page"} element={<HelpPage/>}></Route>
+                        <Route path={"/hard-stop"} element={<HardStop/>}></Route>
                         <Route path={"*"} element={<NotFoundPage/>}></Route>
                     </Routes>
                 </BrowserRouter>
