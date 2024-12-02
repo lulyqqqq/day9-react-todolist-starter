@@ -29,6 +29,7 @@ function App() {
                     <nav>
                         <Link to="/todo-list" style={linkStyle}>Home</Link>
                         <Link to="/todo-done-list" style={linkStyle}>todoList</Link>
+                        <Link to="/todo-help-page" style={linkStyle}>Help</Link>
                     </nav>
                     <Routes>
                         <Route path={"/"} element={<Navigate to="/todo-list"/>}></Route>
